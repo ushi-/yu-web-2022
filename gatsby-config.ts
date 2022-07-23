@@ -17,7 +17,6 @@ const config: GatsbyConfig = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -36,6 +35,7 @@ const config: GatsbyConfig = {
       },
       __key: 'pages',
     },
+    'gatsby-transformer-remark',
     '@chakra-ui/gatsby-plugin',
   ],
 }
