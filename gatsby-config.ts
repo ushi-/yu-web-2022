@@ -17,13 +17,14 @@ const config: GatsbyConfig = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: './src/img/',
       },
       __key: 'images',
     },
@@ -35,8 +36,47 @@ const config: GatsbyConfig = {
       },
       __key: 'pages',
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          // {
+          //   resolve: 'gatsby-remark-relative-images',
+          //   options: {
+          //     name: 'uploads',
+          //   },
+          // },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 960,
+              linkImagesToOriginal: false,
+              quality: 90,
+              tracedSVG: true,
+              wrapperStyle: 'margin-top: 0.33em; margin-bottom: 0.33em',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
+          'gatsby-remark-component',
+          'gatsby-remark-external-links',
+        ],
+      },
+    },
     '@chakra-ui/gatsby-plugin',
+    {
+      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      options: {
+        develop: false, // Activates purging in npm run develop
+      },
+    }, // must be after other CSS plugins
   ],
 }
 
