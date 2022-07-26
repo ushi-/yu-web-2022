@@ -14,7 +14,6 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    'gatsby-plugin-emotion',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
@@ -70,13 +69,6 @@ const config: GatsbyConfig = {
         ],
       },
     },
-    '@chakra-ui/gatsby-plugin',
-    {
-      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
-      options: {
-        develop: false, // Activates purging in npm run develop
-      },
-    }, // must be after other CSS plugins
   ],
 }
 
