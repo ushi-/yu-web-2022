@@ -66,42 +66,44 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      htmlAst
-      frontmatter {
-        title
-        headline
-      }
+export const pageQuery = graphql`query IndexPageTemplate {
+  markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+    htmlAst
+    frontmatter {
+      title
+      headline
     }
-    allMarkdownRemark(
-      limit: 2000
-      filter: { frontmatter: { templateKey: { eq: "project" } } }
-      sort: { order: DESC, fields: [frontmatter___order] }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            client
-            indexHeadline
-            indexOrientation
-            indexJustification
-            indexImage {
-              childImageSharp {
-                fluid(maxWidth: 768, quality: 90) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
+  }
+  allMarkdownRemark(
+    limit: 2000
+    filter: {frontmatter: {templateKey: {eq: "project"}}}
+    sort: {order: DESC, fields: [frontmatter___order]}
+  ) {
+    edges {
+      node {
+        frontmatter {
+          title
+          client
+          indexHeadline
+          indexOrientation
+          indexJustification
+          indexImage {
+            childImageSharp {
+              gatsbyImageData(
+                width: 768
+                quality: 90
+                placeholder: TRACED_SVG
+                layout: CONSTRAINED
+              )
             }
-            externalLink
           }
-          fields {
-            slug
-          }
+          externalLink
+        }
+        fields {
+          slug
         }
       }
     }
   }
+}
 `

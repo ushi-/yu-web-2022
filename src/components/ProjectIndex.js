@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Anchor, Box, ResponsiveContext, Text } from 'grommet'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components'
 // import Fade from 'react-reveal/Fade'
 
@@ -112,7 +112,7 @@ const ProjectIndex = ({ index, node, verticalPad }) => (
         >
           <Box basis={imageBasis} flex="shrink" overflow="hidden">
             <ImageLinkComponent to={slug} href={externalLink} target="blank">
-              <Img fluid={indexImage.childImageSharp.fluid} />
+              <GatsbyImage image={indexImage.childImageSharp.gatsbyImageData} />
             </ImageLinkComponent>
           </Box>
           <Box basis={textBasis} flex="shrink" pad={textPad}>
@@ -130,7 +130,7 @@ const ProjectIndex = ({ index, node, verticalPad }) => (
             {/* </Fade> */}
           </Box>
         </Box>
-      )
+      );
     }}
   </ResponsiveContext.Consumer>
 )

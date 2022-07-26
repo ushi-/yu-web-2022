@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { Box, ResponsiveContext, Text } from 'grommet'
 import styled from 'styled-components'
 import isRelativeUrl from 'is-relative-url'
@@ -36,10 +36,10 @@ export const ProjectTemplate = ({
   heroVideoUrl,
   relatedProjectEdges,
   title,
-  year
+  year,
 }) => (
   <ResponsiveContext.Consumer>
-    {size => {
+    {(size) => {
       const PostContent = contentComponent || Content
       const mobile = size === 'small'
       const relatedProjects = relatedProjectEdges
@@ -60,17 +60,19 @@ export const ProjectTemplate = ({
               left: 'xsmall',
               right: 'xsmall',
               top: mobile ? 'large' : 'medium',
-              bottom: 'xsmall'
+              bottom: 'xsmall',
             }}
           >
             <Box pad={{ vertical: 'xsmall' }}>
               {heroVideoUrl !== '' ? (
                 <VideoPlayer
                   url={heroVideoUrl}
-                  fluidPlaceholder={heroImage.childImageSharp.fluid}
+                  fluidPlaceholder={heroImage.childImageSharp.gatsbyImageData}
                 />
               ) : (
-                <Img fluid={heroImage.childImageSharp.fluid} />
+                <GatsbyImage
+                  image={heroImage.childImageSharp.gatsbyImageData}
+                />
               )}
             </Box>
             <Box direction="row" justify="center">
@@ -114,7 +116,7 @@ ProjectTemplate.propTypes = {
   heroVideoUrl: PropTypes.string,
   relatedProjectEdges: PropTypes.array,
   title: PropTypes.string,
-  year: PropTypes.string
+  year: PropTypes.string,
 }
 
 const Project = ({ data, location }) => {
@@ -127,14 +129,15 @@ const Project = ({ data, location }) => {
     longHeadline,
     relatedProjects,
     title,
-    year
+    year,
   } = post.frontmatter
   const { edges } = data.allMarkdownRemark
-  const relatedProjectEdges = edges.filter(edge =>
+  const relatedProjectEdges = edges.filter((edge) =>
     relatedProjects.includes(edge.node.frontmatter.title)
   )
   const ogTitle = `${title} | ${siteTitle}`
-  const heroImageUrl = heroImage.childImageSharp.fluid.src
+  const heroImageUrl =
+    heroImage.childImageSharp.gatsbyImageData.images.fallback.src
   const ogImageUrl = isRelativeUrl(heroImageUrl)
     ? `${siteUrl}${heroImageUrl}`
     : heroImageUrl
@@ -168,8 +171,8 @@ const Project = ({ data, location }) => {
 Project.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
-    allMarkdownRemark: PropTypes.object
-  })
+    allMarkdownRemark: PropTypes.object,
+  }),
 }
 
 export default Project
@@ -186,9 +189,11 @@ export const pageQuery = graphql`
         longHeadline
         heroImage {
           childImageSharp {
-            fluid(maxWidth: 1152, quality: 90) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(
+              quality: 90
+              placeholder: TRACED_SVG
+              layout: FULL_WIDTH
+            )
           }
         }
         heroVideoUrl
@@ -210,9 +215,12 @@ export const pageQuery = graphql`
             indexJustification
             indexImage {
               childImageSharp {
-                fluid(maxWidth: 768, quality: 90) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+                gatsbyImageData(
+                  width: 768
+                  quality: 90
+                  placeholder: TRACED_SVG
+                  layout: CONSTRAINED
+                )
               }
             }
             externalLink
