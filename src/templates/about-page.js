@@ -2,23 +2,28 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Box } from 'grommet'
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import { Heading1 } from '../components/Theme'
 import Section from '../components/Section'
 
+const MultiLineHeading1 = styled(Heading1)`
+  white-space: pre-line;
+`
+
 export const AboutPageTemplate = ({
   headline,
   content,
   contentAst,
-  contentComponent
+  contentComponent,
 }) => {
   const PageContent = contentComponent || Content
   return (
     <Section>
       <Box pad="xsmall">
-        <Heading1>{headline}</Heading1>
+        <MultiLineHeading1>{headline}</MultiLineHeading1>
         <PageContent
           className="content"
           content={content}
@@ -33,7 +38,7 @@ AboutPageTemplate.propTypes = {
   headline: PropTypes.string,
   content: PropTypes.string,
   contentAst: PropTypes.object,
-  contentComponent: PropTypes.func
+  contentComponent: PropTypes.func,
 }
 
 const AboutPage = ({ data, location }) => {
@@ -51,7 +56,7 @@ const AboutPage = ({ data, location }) => {
 }
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 }
 
 export default AboutPage

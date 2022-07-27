@@ -2,12 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Box } from 'grommet'
+import styled from 'styled-components'
 
 import Content, { HTMLContent } from '../components/Content'
 import Layout from '../components/Layout'
 import ProjectIndex from '../components/ProjectIndex'
 import Section from '../components/Section'
 import { Heading1 } from '../components/Theme'
+
+const MultiLineHeading1 = styled(Heading1)`
+  white-space: pre-line;
+`
 
 export const IndexPageTemplate = ({
   content,
@@ -29,7 +34,7 @@ export const IndexPageTemplate = ({
   return (
     <Section>
       <Box pad="xsmall">
-        <Heading1>{headline}</Heading1>
+        <MultiLineHeading1>{headline.split('.').join('.')}</MultiLineHeading1>
         <PageContent
           className="content"
           content={content}
