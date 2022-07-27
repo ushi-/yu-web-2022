@@ -33,6 +33,6 @@ To demonstrate how immersive data experience (e.g. AR, VR, etc.) can facilitate 
 
 - Concept & Design: Yosuke Ushigome (Takram)
 - Demo & Presentation Assistance: Ken Fujiyoshi (Takram)
-- Research: Jonathan Skjøtt (ex-Takram)
+- Research: Jonathan Skjøtt (Takram)
 - Production: [BYO](https://byo.works/)
 - Software Development: BAUD
