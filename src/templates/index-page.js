@@ -14,7 +14,7 @@ const MultiLineHeading1 = styled(Heading1)`
   white-space: pre-line;
 `
 
-export const IndexPageTemplate = ({
+const IndexPageTemplate = ({
   content,
   contentAst,
   contentComponent,

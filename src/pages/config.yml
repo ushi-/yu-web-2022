@@ -1,0 +1,101 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'src/pages/projects'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'project',
+        }
+      - {
+          label: 'Order',
+          name: 'order',
+          widget: 'number',
+          default: 0,
+          valueType: 'int',
+          min: 0,
+          max: 1000,
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Year', name: 'year', widget: 'string' }
+      - { label: 'Client', name: 'client', widget: 'string' }
+      - { label: 'Index Headline', name: 'indexHeadline', widget: 'text' }
+      - {
+          label: 'Index Orientation',
+          name: 'indexOrientation',
+          widget: 'select',
+          default: 'landscape',
+          options: ['landscape', 'portrait', 'square'],
+        }
+      - {
+          label: 'Index Justification',
+          name: 'indexJustification',
+          widget: 'select',
+          default: 'left',
+          options: ['left', 'center', 'right'],
+        }
+      - {
+          label: 'Index Image (landscape: 768x432 | portrait: 576x768 | square: 480x480)',
+          name: 'indexImage',
+          widget: image,
+        }
+      - { label: 'Headline', name: 'longHeadline', widget: 'text' }
+      - {
+          label: 'Hero Image (1152x720 or 1152x648 for Hero Video Placeholder)',
+          name: 'heroImage',
+          widget: 'image',
+        }
+      - { label: 'Hero Video URL', name: 'heroVideoUrl', widget: 'string' }
+      - {
+          label: 'Related Projects',
+          name: 'relatedProjects',
+          widget: 'relation',
+          collection: 'projects',
+          searchFields: ['name'],
+          valueField: 'name',
+          multiple: true,
+        }
+      - { label: 'External Link', name: 'externalLink', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: 'src/pages/index.md'
+        label: 'Index'
+        name: 'index'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'index-page',
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Headline, name: headline, widget: text }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - file: 'src/pages/about/index.md'
+        label: 'About'
+        name: 'about'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'about-page',
+            }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: Headline, name: headline, widget: text }
+          - { label: Bio, name: bio, widget: text }
+          - { label: 'Body', name: 'body', widget: 'markdown' }

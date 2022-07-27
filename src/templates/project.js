@@ -25,7 +25,7 @@ const Title = styled(Heading4)`
   line-height: 1.4;
 `
 
-export const ProjectTemplate = ({
+const ProjectTemplate = ({
   client,
   content,
   contentAst,
