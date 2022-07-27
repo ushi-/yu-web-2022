@@ -4,28 +4,32 @@ import { graphql } from 'gatsby'
 import { Box } from 'grommet'
 
 import Content, { HTMLContent } from '../components/Content'
-import FluidHeadline from '../components/FluidHeadline'
 import Layout from '../components/Layout'
 import ProjectIndex from '../components/ProjectIndex'
 import Section from '../components/Section'
+import { Heading1 } from '../components/Theme'
 
 export const IndexPageTemplate = ({
   content,
   contentAst,
   contentComponent,
   edges,
-  headline
+  headline,
 }) => {
   const PageContent = contentComponent || Content
   const projects = edges
     ? edges.map((edge, index) => (
-        <ProjectIndex key={edge.node.fields.slug} index={index} node={edge.node} />
+        <ProjectIndex
+          key={edge.node.fields.slug}
+          index={index}
+          node={edge.node}
+        />
       ))
     : null
   return (
     <Section>
       <Box pad="xsmall">
-        <FluidHeadline headline={headline} />
+        <Heading1>{headline}</Heading1>
         <PageContent
           className="content"
           content={content}
@@ -42,7 +46,7 @@ IndexPageTemplate.propTypes = {
   contentAst: PropTypes.object,
   contentComponent: PropTypes.func,
   edges: PropTypes.array,
-  headline: PropTypes.string
+  headline: PropTypes.string,
 }
 
 const IndexPage = ({ data, location }) => {
@@ -61,49 +65,50 @@ const IndexPage = ({ data, location }) => {
 }
 
 IndexPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 }
 
 export default IndexPage
 
-export const pageQuery = graphql`query IndexPageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
-    htmlAst
-    frontmatter {
-      title
-      headline
+export const pageQuery = graphql`
+  query IndexPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      htmlAst
+      frontmatter {
+        title
+        headline
+      }
     }
-  }
-  allMarkdownRemark(
-    limit: 2000
-    filter: {frontmatter: {templateKey: {eq: "project"}}}
-    sort: {order: DESC, fields: [frontmatter___order]}
-  ) {
-    edges {
-      node {
-        frontmatter {
-          title
-          client
-          indexHeadline
-          indexOrientation
-          indexJustification
-          indexImage {
-            childImageSharp {
-              gatsbyImageData(
-                width: 768
-                quality: 90
-                placeholder: TRACED_SVG
-                layout: CONSTRAINED
-              )
+    allMarkdownRemark(
+      limit: 2000
+      filter: { frontmatter: { templateKey: { eq: "project" } } }
+      sort: { order: DESC, fields: [frontmatter___order] }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            client
+            indexHeadline
+            indexOrientation
+            indexJustification
+            indexImage {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 768
+                  quality: 90
+                  placeholder: TRACED_SVG
+                  layout: CONSTRAINED
+                )
+              }
             }
+            externalLink
           }
-          externalLink
-        }
-        fields {
-          slug
+          fields {
+            slug
+          }
         }
       }
     }
   }
-}
 `

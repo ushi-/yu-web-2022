@@ -7,7 +7,7 @@ import {
   WhyteRegularWoff,
   WhyteRegularWoff2,
   WhyteinktrapBoldWoff,
-  WhyteinktrapBoldWoff2
+  WhyteinktrapBoldWoff2,
 } from '../fonts'
 
 const Theme = {
@@ -15,24 +15,24 @@ const Theme = {
     colors: {
       brand: '#6060FF',
       control: {
-        light: 'brand'
+        light: 'brand',
       },
       focus: 'brand',
       text: {
-        light: 'black'
-      }
+        light: 'black',
+      },
     },
     focus: {
       border: {
-        color: 'brand'
-      }
+        color: 'brand',
+      },
     },
     font: {
-      family: 'Whyte'
+      family: 'Whyte',
     },
     input: {
-      padding: '6px'
-    }
+      padding: '6px',
+    },
   },
   anchor: {
     fontWeight: 400,
@@ -40,102 +40,102 @@ const Theme = {
       textDecoration: 'none',
       extend: `
         opacity: 0.6;
-      `
+      `,
     },
     color: 'brand',
     extend: `
       transition: 0.2s ease-out;
-    `
+    `,
   },
   formField: {
     label: {
       margin: {
-        horizontal: 'xsmall'
-      }
-    }
+        horizontal: 'xsmall',
+      },
+    },
   },
   heading: {
     level: {
-      '1': {
+      1: {
         font: {
-          family: 'Whyte Inktrap'
+          family: 'Whyte Inktrap',
         },
         medium: {
           size: '32px',
-          height: '1.25'
-        }
+          height: '1.25',
+        },
       },
-      '2': {
+      2: {
         font: {
-          family: 'Whyte Inktrap'
+          family: 'Whyte Inktrap',
         },
         medium: {
           size: '24px',
-          height: '1.25'
-        }
+          height: '1.25',
+        },
       },
-      '3': {
+      3: {
         font: {
-          weight: 400
+          weight: 400,
         },
         medium: {
           size: '20px',
           height: '1.25',
-          weight: '300'
-        }
+          weight: '300',
+        },
       },
-      '4': {
+      4: {
         font: {
-          family: 'Whyte Inktrap'
+          family: 'Whyte Inktrap',
         },
         medium: {
           size: '14px',
-          height: '1.25'
+          height: '1.25',
         },
         margin: {
-          bottom: '0'
-        }
-      }
+          bottom: '0',
+        },
+      },
     },
     responsiveBreakpoint: '',
     extend: `
       color: inherit;
-    `
+    `,
   },
   layer: {
     border: {
-      radius: 0
+      radius: 0,
     },
-    background: 'transparent'
+    background: 'transparent',
   },
   paragraph: {
     medium: {
       size: '14px',
       height: '1.4',
-      maxWidth: '768px'
+      maxWidth: '768px',
     },
     large: {
       size: '20px',
       height: '1.25',
-      maxWidth: '768px'
+      maxWidth: '768px',
     },
     extend: `
       margin-top: 0.33em;
       margin-bottom: 1em;
-    `
+    `,
   },
   text: {
     medium: {
       size: '14px',
       height: '1.4',
-      maxWidth: '768px'
+      maxWidth: '768px',
     },
     large: {
       size: '20px',
       height: '1.25',
-      maxWidth: '768px'
-    }
-  }
+      maxWidth: '768px',
+    },
+  },
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -194,22 +194,22 @@ export const GlobalStyle = createGlobalStyle`
 
 export default Theme
 
-export const Heading1 = props => (
+export const Heading1 = (props) => (
   <Heading className={props.className} level={'1'}>
     {props.children}
   </Heading>
 )
-export const Heading2 = props => (
+export const Heading2 = (props) => (
   <Heading className={props.className} level={'2'}>
     {props.children}
   </Heading>
 )
-export const Heading3 = props => (
+export const Heading3 = (props) => (
   <Heading className={props.className} level={'3'}>
     {props.children}
   </Heading>
 )
-export const Heading4 = props => (
+export const Heading4 = (props) => (
   <Heading className={props.className} level={'4'}>
     {props.children}
   </Heading>
