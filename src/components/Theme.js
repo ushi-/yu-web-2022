@@ -142,10 +142,12 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "Whyte";
     src: url(${WhyteRegularWoff2}) format('woff2'), url(${WhyteRegularWoff}) format('woff');
+    font-display: swap;
   }
   @font-face {
     font-family: "Whyte Inktrap";
     src: url(${WhyteinktrapBoldWoff2}) format('woff2'), url(${WhyteinktrapBoldWoff}) format('woff');
+    font-display: swap;
   }
   body {
     font-family: 'Whyte', 'Helvitica', sans-serif;

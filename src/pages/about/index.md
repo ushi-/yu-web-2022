@@ -3,8 +3,7 @@ templateKey: about-page
 title: About
 headline: |
   I am Yosuke Ushigome, creative technologist based in London.
-  I create future visions, build proof-of-concept prototypes and design new
-  interactions.
+  I create future visions, build proof-of-concept prototypes and design new interactions.
 bio: ' '
 ---
 
@@ -60,12 +59,16 @@ bio: ' '
 
 #### Experience
 
-- Director, Creative Technologist at [Takram](https://www.takram.com), London, 2015 - current
+- Director at [Takram London](https://www.takram.com), London, 2019 - current
+- Creative Technologist at [Takram London](https://www.takram.com), London, 2015 - current
 - Intern then associate at [Superflux](http://superflux.in/), London, 2013 - 2014
 - Freelance, London, 2013 - 2014
 - MA Design Interactions at the Royal College of Art, 2011 - 2013
 - MSc Mechano-Informatics at The University of Tokyo, 2008 - 2010
-- Intern at [Takram](https://www.takram.com), Tokyo, 2008 - 2009
+- Intern at [Takram Tokyo](https://www.takram.com), Tokyo, 2008 - 2009
 - BEng System Design Engineering at Keio University, 2004 - 2008
 
-#
+#### Contact
+
+- [yu@yosukeushigo.me](mailto://yu@yosukeushigo.me)
+- [Twitter](https://twitter.com/ushi_)
