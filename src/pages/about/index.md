@@ -19,6 +19,8 @@ bio: ' '
 
 #### Awards, Exhibitions, Events
 
+- Interview : [Wallpaper\*](https://www.wallpaper.com/design/yosuke-ushigome-takram-profile), Can design help us better understand the future?, 2021
+- Op-ed : [ICON 203: Spring 2021](https://www.iconeye.com/digital-magazine/icon-203-spring-2021), Design's watershed moment, 2021
 - Talk : [Design District](https://designdistrict.co.uk/events/talk-bureau-deep-time/), Deep Time: Design for Now and for the Seventh Generation, 2021
 - Talk : [Global Design Forum](https://www.globaldesignforum.com/event/grid-powering-home-presented-ovo-energy), Off the Grid: Powering the Home, 2021
 - Talk : [London Design Biennale](https://www.londondesignbiennale.com/biennale-sessions), AI, Nature and I: Mending the gap between Humans and the Environment, 2021
@@ -36,9 +38,11 @@ bio: ' '
 
 - Lecture : [Hochschule für Gestaltung Schwäbisch Gmünd](https://www.hfg-gmuend.de/), 2022
 - Lecture : [Speculative Futures Stuttgart](https://www.meetup.com/en-AU/speculative-futures-stuttgart/), 2022
-- Lecture : [HNU Design](https://www.thetbdconference.com/), 2022
+- Lecture : [TBD Conference](https://www.thetbdconference.com/), 2022
 - Lecture : [FHNW Academy of Art and Design](https://www.fhnw.ch/en/about-fhnw/schools/academy-of-art-and-design), 2021
 - Talk : [Fridays For Future Japan](https://fridaysforfuture.jp/), 2021
+- Interview : [Wallpaper\*](https://www.wallpaper.com/design/yosuke-ushigome-takram-profile), Can design help us better understand the future?, 2021
+- Op-ed : [ICON 203: Spring 2021](https://www.iconeye.com/digital-magazine/icon-203-spring-2021), Design's watershed moment, 2021
 - Talk : [Design District](https://designdistrict.co.uk/events/talk-bureau-deep-time/), Deep Time: Design for Now and for the Seventh Generation, 2021
 - Talk : [Global Design Forum](https://www.globaldesignforum.com/event/grid-powering-home-presented-ovo-energy), Off the Grid: Powering the Home, 2021
 - Talk : [London Design Biennale](https://www.londondesignbiennale.com/biennale-sessions), AI, Nature and I: Mending the gap between Humans and the Environment, 2021
