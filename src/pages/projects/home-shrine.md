@@ -27,6 +27,12 @@ By giving a sense of ownership and responsibility for the future to the user, we
 
 ![Home Shrine](../../img/home-shrine/dof_01.jpg)
 
+#### Home Shrine animation
+
+We also collaborated with MUTE Animation Studio to create a playful animation that illustrates Home Shrine’s concept and its relation to the history of user interface. The animation accompanied the prototype at Design Miami/ Basel to facilitate audience’s understanding.
+
+`vimeo: 276005868`
+
 #### Credit
 
 - Direction, Concept, Interaction Design: Yosuke Ushigome (Takram)
