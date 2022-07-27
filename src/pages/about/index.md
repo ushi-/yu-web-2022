@@ -19,6 +19,10 @@ bio: ' '
 
 #### Awards, Exhibitions, Events
 
+- Talk : [Design District](https://designdistrict.co.uk/events/talk-bureau-deep-time/), Deep Time: Design for Now and for the Seventh Generation, 2021
+- Talk : [Global Design Forum](https://www.globaldesignforum.com/event/grid-powering-home-presented-ovo-energy), Off the Grid: Powering the Home, 2021
+- Talk : [London Design Biennale](https://www.londondesignbiennale.com/biennale-sessions), AI, Nature and I: Mending the gap between Humans and the Environment, 2021
+- Lecture : [Design Indaba](https://www.designindaba.com/), 2020
 - Jury : [Core77 Design Award](https://designawards.core77.com/2019/speculative-design), Speculative Design Jury Captain, 2019
 - Award : [Swarovski Designers of the Future Award](https://www.swarovskigroup.com/S/news/Designers-of-the-Future.en.html), 2018
 - Lecture : [Resonate](https://resonate.io), Belgrade, 2017
@@ -30,6 +34,19 @@ bio: ' '
 <details>
 <summary>Show all</summary>
 
+- Lecture : [Hochschule für Gestaltung Schwäbisch Gmünd](https://www.hfg-gmuend.de/), 2022
+- Lecture : [Speculative Futures Stuttgart](https://www.meetup.com/en-AU/speculative-futures-stuttgart/), 2022
+- Lecture : [HNU Design](https://www.thetbdconference.com/), 2022
+- Lecture : [FHNW Academy of Art and Design](https://www.fhnw.ch/en/about-fhnw/schools/academy-of-art-and-design), 2021
+- Talk : [Fridays For Future Japan](https://fridaysforfuture.jp/), 2021
+- Talk : [Design District](https://designdistrict.co.uk/events/talk-bureau-deep-time/), Deep Time: Design for Now and for the Seventh Generation, 2021
+- Talk : [Global Design Forum](https://www.globaldesignforum.com/event/grid-powering-home-presented-ovo-energy), Off the Grid: Powering the Home, 2021
+- Talk : [London Design Biennale](https://www.londondesignbiennale.com/biennale-sessions), AI, Nature and I: Mending the gap between Humans and the Environment, 2021
+- Lecture : [N High School](https://nnn.ed.jp/), 2021
+- Lecture : [Kontrapunkt Webinar](https://www.kontrapunkt.com/news/webinarstrategic-foresight), Strategic Foresight: Crafting future scenarios for better strategic navigation, 2021
+- Lecture : [London College of Communication](https://www.arts.ac.uk/colleges/london-college-of-communication), 2021
+- Lecture : [DLX Design Academy](https://en.dlxdesignacademy.com/), 2021
+- Lecture : [Design Indaba](https://www.designindaba.com/), 2020
 - Jury : [Core77 Design Award](https://designawards.core77.com/2019/speculative-design), Speculative Design Jury Captain, 2019
 - Award : [Swarovski Designers of the Future Award](https://www.swarovskigroup.com/S/news/Designers-of-the-Future.en.html), 2018
 - TV : Hodokyoku, Japan, 2017
