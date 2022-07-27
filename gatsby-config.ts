@@ -39,12 +39,6 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          // {
-          //   resolve: 'gatsby-remark-relative-images',
-          //   options: {
-          //     name: 'uploads',
-          //   },
-          // },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -66,6 +60,11 @@ const config: GatsbyConfig = {
           },
           'gatsby-remark-component',
           'gatsby-remark-external-links',
+          {
+            resolve: 'gatsby-remark-embed-video',
+            options: { width: 768 },
+          },
+          'gatsby-remark-responsive-iframe', //Optional: Must be loaded after gatsby-remark-embed-video
         ],
       },
     },

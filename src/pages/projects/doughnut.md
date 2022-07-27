@@ -19,11 +19,11 @@ externalLink: ''
 
 As a leading infrastructure company, Hitachi wanted to address climate change by repositioning itself as a sustainable global brand. For this mission, we were tasked with envisioning new environmental concepts for the 2020s and exploring how these ideas might inspire the company's creative practices in the future. Working closely with our studios in Tokyo, London, and New York, we examined global trends and surveyed new approaches through interviews with leading creators from various disciplines to deliver the 2020 Hitachi Environmental Vision Report.
 
-![Frameworks for Transition](../../img/doughnut/doughnut_archive_illustrations.jpg)
-
 #### Frameworks for Transition
 
 Our research gave birth to "frameworks for transition" – a compilation of guidelines inspired by creative leaders that have been applying sustainability-minded approaches to their projects in the Anthropocene. Below is a selection of the dozens of frameworks featured in our research report.
+
+`youtube: qIdiN2zT4sA`
 
 #### Climate everyday
 
@@ -36,6 +36,8 @@ In many places around the world, the dominant paradigm for centuries (especially
 #### A plurality of possible pasts and futures
 
 To properly address the ecological crisis, we need to create room for growth in different societies and communities. The act of acknowledging the possibilities of multiple pasts and futures is one way to give these worlds a chance to exist. Designing a framework in which multiple Future Cones coexist next to each other will not only diversify the narrations of each world's possible past and future but clarify the concept of plurality.
+
+![Frameworks for Transition](../../img/doughnut/doughnut_archive_illustrations.jpg)
 
 #### Credit
 
