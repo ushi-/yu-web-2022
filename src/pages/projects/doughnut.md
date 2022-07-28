@@ -6,7 +6,7 @@ year: '2020'
 client: 'Hitachi'
 indexHeadline: Global study on transformative creativities in the age of crisis
 indexOrientation: landscape
-indexJustification: right
+indexJustification: left
 indexImage: ../../img/doughnut/doughnut_hero_02.jpg
 longHeadline: Exploring how new environmental concepts in the age of crisis might inspire the company's creative practices in the future
 heroImage: ../../img/doughnut/doughnut_hero_02.jpg

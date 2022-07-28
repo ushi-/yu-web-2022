@@ -1,12 +1,12 @@
 ---
 templateKey: project
-order: '110'
+order: '155'
 title: RISAR Prototype
 year: '2020'
 client: ''
 indexHeadline: Making sea level rise more tangible through AR
 indexOrientation: landscape
-indexJustification: left
+indexJustification: right
 indexImage: ../../img/risar-prototype/risar-1.jpg
 longHeadline: Making sea level rise more tangible through AR
 heroImage: ../../img/risar-prototype/risar-2.jpg

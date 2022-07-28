@@ -6,7 +6,7 @@ year: '2021'
 client: ''
 indexHeadline: Can design help us better understand the future?
 indexOrientation: square
-indexJustification: left
+indexJustification: right
 indexImage: ../../img/wallpaper/moovel.png
 longHeadline: ''
 heroImage: ../../img/wallpaper/moovel.png

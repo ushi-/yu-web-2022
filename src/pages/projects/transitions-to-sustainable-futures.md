@@ -6,7 +6,7 @@ year: '2021'
 client: 'Hitachi'
 indexHeadline: Capturing nine diverse transitions towards a sustainable world
 indexOrientation: landscape
-indexJustification: right
+indexJustification: center
 indexImage: ../../img/transitions-to-sustainable-futures/torus2-hero.jpg
 longHeadline: The world is at a tipping point. The actions we take over the coming years will have a profound impact on the future of our planet. But finding the best way forward can be hard – especially given the scale and complexity of the challenge facing us. That’s why we need to approach the problem in a new way.
 heroImage: ../../img/transitions-to-sustainable-futures/torus2-hero.jpg
