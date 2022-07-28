@@ -12,8 +12,8 @@ longHeadline: Exploring how new environmental concepts in the age of crisis migh
 heroImage: ../../img/doughnut/doughnut_hero_02.jpg
 heroVideoUrl: ''
 relatedProjects:
-  - Plantolympics
-  - Home Shrine
+  - RISAR Prototype
+  - Post-Covid Infrastructure Futures
 externalLink: ''
 ---
 
