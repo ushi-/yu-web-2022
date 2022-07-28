@@ -91,6 +91,7 @@ const Theme = {
         medium: {
           size: '14px',
           height: '1.25',
+          maxWidth: 'inherit',
         },
         margin: {
           bottom: '0',
