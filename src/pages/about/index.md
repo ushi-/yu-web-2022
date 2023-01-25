@@ -7,9 +7,9 @@ headline: |
 bio: ' '
 ---
 
-### I currently work at [Takram](https://www.takram.com), a design innovation firm based in Tokyo, London and New York as one of the directors.
+#### Bio
 
-### Driven by both love and concern in emerging technologies and their influence on us, my interaction design practice tends to straddle multiple stages of product development; from concept through prototyping to real-world deployment. By doing so, I facilitate in-depth understanding of the implication of emerging technologies and encourage better-informed decision-making on our future.
+Yosuke [yō-ské] is director and creative technologist at [Takram London](https://www.takram.com), specialising in futures research, digital prototyping and interaction design, and designs for better-informed decision-making about our future. His recent projects, including [Transitions to sustainable futures research with Hitachi](http://yosukeushigo.me/projects/transitions-to-sustainable-futures/), focus on the interplay between people, technology and the planet. Yosuke was the recipient of the 2018 Swarovski Designers of the Future Award. He has also written for design publications such as Core77 and ICON magazine.
 
 #### What I do
 
@@ -91,5 +91,5 @@ bio: ' '
 
 #### Contact
 
-- [yu@yosukeushigo.me](mailto://yu@yosukeushigo.me)
+- [yu@yosukeushigo.me](mailto:yu@yosukeushigo.me)
 - [Twitter](https://twitter.com/ushi_)
