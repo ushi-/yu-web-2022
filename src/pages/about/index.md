@@ -91,5 +91,7 @@ Yosuke [yō-ské] is director and creative technologist at [Takram London](https
 
 #### Contact
 
-- [yu@yosukeushigo.me](mailto:yu@yosukeushigo.me)
+- [Email](mailto:yu@yosukeushigo.me)
+- [Mastodon](https://assemblag.es/@yosukeushigome)
+- [LinkedIn](https://www.linkedin.com/in/yosukeushigome/)
 - [Twitter](https://twitter.com/ushi_)
