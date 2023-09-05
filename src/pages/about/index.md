@@ -1,15 +1,15 @@
 ---
 templateKey: about-page
 title: About
-headline: |
-  I am Yosuke Ushigome, creative technologist based in London.
-  I create future visions, build proof-of-concept prototypes and design new interactions.
+headline: I am Yosuke Ushigome, a designer / researcher / technologist based in London. I create future visions, build proof-of-concept prototypes and design new interactions.
 bio: ' '
 ---
 
 #### Bio
 
-Yosuke [yō-ské] is director and creative technologist at [Takram London](https://www.takram.com), specialising in futures research, digital prototyping and interaction design, and designs for better-informed decision-making about our future. His recent projects, including [Transitions to sustainable futures research with Hitachi](http://yosukeushigo.me/projects/transitions-to-sustainable-futures/), focus on the interplay between people, technology and the planet. Yosuke was the recipient of the 2018 Swarovski Designers of the Future Award. He has also written for design publications such as Core77 and ICON magazine.
+Yosuke [yō-ské • He/Him] is a designer / researcher / technologist based in London. Specialising in futures research and interaction design & prototyping, he designs for better-informed decision-making about our future. His recent projects, including [Transitions to sustainable futures research with Hitachi](http://yosukeushigo.me/projects/transitions-to-sustainable-futures/), focus on the interplay between people, technology and the planet. Yosuke was the recipient of the 2018 Swarovski Designers of the Future Award. He has also written for design publications such as Core77 and ICON magazine.
+
+Yosuke currently works for [Normally](https://normally.com/) as Interaction Designer.
 
 #### What I do
 
@@ -80,8 +80,9 @@ Yosuke [yō-ské] is director and creative technologist at [Takram London](https
 
 #### Experience
 
-- Director at [Takram London](https://www.takram.com), London, 2019 - current
-- Creative Technologist at [Takram London](https://www.takram.com), London, 2015 - current
+- Interaction Designer at [Normally](https://normally.com/), London, 2023 -
+- Director at [Takram London](https://www.takram.com), London, 2019 - 2023
+- Creative Technologist at [Takram London](https://www.takram.com), London, 2015 - 2023
 - Intern then associate at [Superflux](http://superflux.in/), London, 2013 - 2014
 - Freelance, London, 2013 - 2014
 - MA Design Interactions at the Royal College of Art, 2011 - 2013
